@@ -1,35 +1,55 @@
 .main-component {
   font-family: sans-serif;
-  background-color:  rgb(133, 231, 133);
   text-align: center;
   
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-repeat: repeat-y #000;
+   color: white;
 }
 .header {
   background-color: inherit;
   width: 100%;
-  height: 18vh;
+  height: 18vhs;
 }
 
 .graph{
   width: 100%;
   height: 100vh;
-  border-top: 10px solid rgb(17, 190, 234);
+  border-top: 10px solid rgb(48, 113, 129);
+}
+
+.graphImage{
+  width: 80%;
+}
+
+.source{
+  color: gray;
+  font-family: serif, sans-serif, monospace;
+}
+
+.about{
+  width: 800px;
+  height: 400px;
+  background-color: rgb(48, 113, 129);
+  color: white;
 }
 
 
 .home-body {
   width: 100%;
   height: 100vh;
-  background-color: rgb(133, 231, 133);
+  background-color: inherit;
 
 }
 
 .select-field {
-  border: 1px solid rgb(78, 65, 65);
+  border: 2px solid rgb(250, 250, 250);
   border-radius: 35px;
-  width: 60%;
-  font-size: large;
-  padding: 1px;
+  width: 70%;
+  font-size: 20px;
+  color: white;
+  padding: 2px;
   text-align: center;
   background-color: inherit;
 }
@@ -38,22 +58,17 @@
   background-color: inherit;
 }
 
-.search-field{
-  border: 1px solid rgb(78, 65, 65);
-  border-radius: 35px;
-  
-  text-align: center;
-  background-color: inherit;
-}
-
 .text-input {
   background-color: inherit;
   border-style: hidden;
-  
 }
 
-.text-input {
-  outline: none;
+
+.nav-link {
+  font-size: 24px;
+}
+.nav-link:hover{
+  text-decoration-line: underline;
 }
 
 
@@ -61,109 +76,98 @@
   color: rgb(232, 230, 227);
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 10px;
+  font-size: 18px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 30px;
   border-radius: 50px;
   line-height: 1;
   margin: 10px;
-  border: 2px solid #1f2222;
+  border: 2px solid #f6f8f8;
   background-color: inherit;     
   text-decoration: none;
 
 }
-
-.btn-show{
-  color: rgb(232, 230, 227);
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 12px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 6px 15px;
-  border-radius: 50px;
-  line-height: 1;
-  border: 2px solid #1f2222;
-  background-color: inherit;     
-  text-decoration: none;
-}
-
-.btn-show:hover{
-  background-color: rgb(17, 190, 234);
-}
-
 
 .search-button:hover{
    animation-name: hover-anim;
-   animation-duration: 2s;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+   animation-iteration-count: 1;
+   background-color: rgb(48, 113, 129);
+}
+.search-button:not( :hover){
+  animation-name: not-hover-anim;
+   animation-duration: 1s;
    animation-fill-mode: forwards;
    animation-iteration-count: 1;
 }
 
 @keyframes hover-anim {
   0% {
-    background: linear-gradient(to right, rgb(17, 190, 234) 0%, 0%,rgba(0, 128, 0,0.1) 100%),
-        radial-gradient(circle at -100%, rgb(17, 190, 234) 50%, green 50%);
+    background: linear-gradient(to right, rgb(48, 113, 129) 0%, 0%, rgba(0, 128, 0, 0) 100%),
+        radial-gradient(circle at -100%, rgb(48, 113, 129) 50%, rgba(0, 128, 0, 0) 50%);
     
   }
 
-  10% {
-    background: linear-gradient(to right, rgb(17, 190, 234) 20%,20%, rgba(0, 128, 0, 0.1) 80%),
-              radial-gradient(circle at -50%, rgb(17, 190, 234) 50%, green 50%);
-   
-  }
-
   20% {
-    background: linear-gradient(to right, rgb(17, 190, 234) 40%, 40%, rgba(0, 128, 0, 0.1) 60%),
-              radial-gradient(circle at -5%, rgb(17, 190, 234) 50%, green 50%);
-   
-  }
-
-  30% {
-    background: linear-gradient(to right, rgb(17, 190, 234) 60%, 60%, rgba(0, 128, 0, 0.1) 40%),
-              radial-gradient(circle at 25%, rgb(17, 190, 234) 50%, green 50%);
+    background: linear-gradient(to right, rgb(48, 113, 129) 20%,20%, rgba(0, 128, 0, 0) 80%),
+              radial-gradient(circle at -50%, rgb(48, 113, 129) 50%, rgba(0, 128, 0, 0) 50%);
    
   }
 
   40% {
-    background: linear-gradient(to right, rgb(17, 190, 234) 80%, 80%, rgba(0, 128, 0, 0.1) 20%),
-            radial-gradient(circle at 55%, rgb(17, 190, 234) 50%, green 50%);
-  }
-
-  50%{
-    background: linear-gradient(to right, rgb(17, 190, 234) 100%, 100%, rgba(0, 128, 0, 0.1) 0%),
-            radial-gradient(circle at 10%,rgb(17, 190, 234) 50%, green 50%);
+    background: linear-gradient(to right, rgb(48, 113, 129) 40%, 40%, rgba(0, 128, 0, 0) 60%),
+              radial-gradient(circle at -5%, rgb(48, 113, 129) 50%, rgba(0, 128, 0, 0) 50%);
+   
   }
 
   60% {
-    background: linear-gradient(to right, rgb(17, 190, 234) 80%, 80%,  rgba(0, 128, 0, 0.1) 20%),
-              radial-gradient(circle at 55%,rgb(17, 190, 234) 50%, green 50%);;
+    background: linear-gradient(to right, rgb(48, 113, 129) 60%, 60%, rgba(0, 128, 0, 0) 40%),
+              radial-gradient(circle at 25%, rgb(48, 113, 129) 50%, rgba(0, 128, 0, 0) 50%);
    
-  }
-
-  70% {
-    background: linear-gradient(to right, rgb(17, 190, 234) 60%, 60%,  rgba(0, 128, 0, 0.1) 40%), 
-              radial-gradient(circle at 25%,rgb(17, 190, 234) 50%, green 50%);;
   }
 
   80% {
-    background: linear-gradient(to right, rgb(17, 190, 234) 40%, 40%,  rgba(0, 128, 0, 0.1) 60%),
-              radial-gradient(circle at -5%,rgb(17, 190, 234) 50%, green 50%);;
+    background: linear-gradient(to right, rgb(48, 113, 129) 80%, 80%, rgba(0, 128, 0, 0) 20%),
+            radial-gradient(circle at 55%, rgb(48, 113, 129) 50%, rgba(0, 128, 0, 0) 50%);
+  }
+
+  100%{
+    background: linear-gradient(to right, rgb(48, 113, 129) 100%, 100%, rgba(0, 128, 0, 0) 0%),
+            radial-gradient(circle at 10%,rgb(48, 113, 129) 50%, rgba(0, 128, 0, 0) 50%);
+  }
+
+}
+
+@keyframes not-hover-anim {
+  0% {
+    background: linear-gradient(to right, rgb(48, 113, 129) 80%, 80%,  rgba(0, 128, 0, 0) 20%),
+              radial-gradient(circle at 55%,rgb(48, 113, 129) 50%, rgba(0, 128, 0, 0) 50%);;
    
   }
 
-  90% {
-    background: linear-gradient(to right, rgb(17, 190, 234) 20%, 20%,  rgba(0, 128, 0, 0.1) 80%),
-              radial-gradient(circle at -50%,rgb(17, 190, 234) 50%, green 50%);;
+  25% {
+    background: linear-gradient(to right, rgb(48, 113, 129) 60%, 60%,  rgba(0, 128, 0, 0) 40%), 
+              radial-gradient(circle at 25%,rgb(48, 113, 129) 50%, rgba(0, 128, 0, 0) 50%);;
+  }
+
+  50% {
+    background: linear-gradient(to right, rgb(48, 113, 129) 40%, 40%,  rgba(0, 128, 0, 0) 60%),
+              radial-gradient(circle at -5%,rgb(48, 113, 129) 50%, rgba(0, 128, 0, 0) 50%);;
+   
+  }
+
+  75% {
+    background: linear-gradient(to right, rgb(48, 113, 129) 20%, 20%,  rgba(0, 128, 0, 0) 80%),
+              radial-gradient(circle at -50%,rgb(48, 113, 129) 50%, rgba(0, 128, 0, 0) 50%);;
    
   }
 
   100% {
-    background: linear-gradient(to right, rgb(17, 190, 234) 0%, 0%,  rgba(0, 128, 0, 0.1) 100%),
-              radial-gradient(circle at -100%,rgb(17, 190, 234) 50%, green 50%);;
+    background: linear-gradient(to right, rgb(48, 113, 129) 0%, 0%,  rgba(0, 128, 0, 0) 100%),
+              radial-gradient(circle at -100%,rgb(48, 113, 129) 50%, rgba(0, 128, 0, 0) 50%);;
 
   }
 }
-
 
